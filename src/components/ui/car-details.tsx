@@ -169,7 +169,7 @@ function SpecItem({ icon, label, value }: { icon: React.ReactNode, label: string
   return (
     <div className="p-6 bg-muted/50 border border-border/50 rounded-2xl flex items-center gap-4 group hover:border-orange-500/50 transition-colors">
       <div className="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500 group-hover:scale-110 transition-transform">
-        {React.cloneElement(icon as React.ReactElement, { size: 24 })}
+        {React.cloneElement(icon as React.ReactElement<any>, { size: 24 })}
       </div>
       <div>
         <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground block leading-none mb-1">{label}</span>
